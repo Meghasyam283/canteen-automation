@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Canteen 1.0</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+            box-sizing:border-box;
+        
+        }
+        .container{
+            height:100vh;
+            width:auto;
+            background-color: chartreuse;
+            border:2px solid black;
+            background-image:url(canteen.jpg);
+            background-repeat: no-repeat;
+            background-size:cover;
+           
+        }
+        .box{
+            height:300px;width:950px;
+            margin-left:200px;
+            background-color:cornsilk;
+            border:2px solid black;border-radius:10px;
+            }
+        img{
+            float:left;
+            height:300px;
+            width:300px;
+        }
+        p{
+            display:flex;
+           font-size:50px;
+           margin-top:100px;
+            justify-content:center;
+            align-items:center;
+        }
+      .small{
+        height:50px;width:950px;
+        background-color: cornsilk;border:2px solid black; margin-left:200px;
+      }
+      a{
+          display:block;
+      color:black;
+      margin:10px;
+    padding-left:120px;
+     font-size:22px;
+     /* width:70px;*/
+      text-decoration: none;
+      text-align: center;
+      float:left;
+     }
+      a:hover{
+          background-color:skyblue;
+          color:white;
+       
+         }
+      .container1{
+            display:flex;
+            flex-direction:row;
+            height:250px;
+            width:950px;
+            border:2px solid black;
+            border-radius:10px;
+            margin-left:200px;
+           background-color: cornsilk;
+        }
+        .Admin{
+            position:relative;
+            height:100px;
+            width:100px;
+            border:2px solid black;
+            margin-left:100px;
+            top:10%;
+             background-image: url(Admin1.png);
+            background-repeat:no-repeat;
+            background-size:100px;
+        }
+        .Customer{
+            position:relative;
+            height:100px;
+            width:100px;
+            border:2px solid black;
+            margin-left:230px;
+            top:10%;
+             background-image:url(Profile.jpg);
+            background-repeat:no-repeat;
+            background-size:100px;
+        }
+        .adlogin{
+            display:flex;
+          position:relative;
+            height:35px;
+            width:100px;
+            border-radius:10%;
+            border:4px solid black;
+          justify-content: center;
+          align-items: center;
+            font-size:15px;
+            margin:5px;
+            top:100%;
+            color:white;
+            background-color:blue;
+        }
+        .culogin{
+            display:flex;
+            position:relative;
+            height:35px;
+            width:100px;
+            border-radius:10%;
+            border:4px solid black;
+            text-align: center;
+            font-size:15px;
+            margin-left:0px;
+            margin-top: 5px;
+            top:100%;
+            justify-content: center;
+          align-items: center;
+            color:white;
+            background-color:blue;
+             }
+             .staff{
+            position:relative;
+            height:100px;
+            width:100px;
+            border:2px solid black;
+            margin-left:250px;
+            top:10%;
+             background-image: url(staff1.jpg);
+            background-repeat:no-repeat;
+            background-size:100px;
+        }
+        .slogin{
+            display:flex;
+            position:relative;
+            height:35px;
+            width:100px;
+            border-radius:10%;
+            border:4px solid black;
+            text-align: center;
+            font-size:15px;
+            margin-left:0px;
+            margin-top: 5px;
+            top:100%;
+            justify-content: center;
+          align-items: center;
+            color:white;
+            background-color:blue;
+        } 
+        #admin{
+            font-size:15px;
+            color:white;margin:0px;padding:0px;
+         }
+         </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="canteen2.jpeg">
+            <p> CANTEEN AUTOMATION SYSTEM</p>
+        </div>
+        <br>
+        <div class="small">
+            <a href="#">HOME</a>
+            <a href="#">AboutUs</a><a href="#">ContactUs</a>
+            <a href="#">LogOut</a>
+        </div>
+        <br>
+        <div class="container1">
+            <div class="Admin" >
+                <div class="adlogin">
+                    <a href="adminlogin.html" id="admin">AdminLogin</a>
+                </div>
+            </div>
+           <div class="Customer">
+               <div class="culogin">CustomerLogin</div>
+           </div>
+          <div class="staff">
+               <div class="slogin">Staff Login</div>
+           </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>

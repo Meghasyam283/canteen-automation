@@ -1,0 +1,109 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<style>
+    .home
+{
+            top:10px;
+            left:20px;
+            background-color:rgb(31, 30, 30);
+            height:80px;
+            width:1480px;
+            border-radius: 20px;
+            font-size: 16;
+            position:absolute;
+            opacity: 0.9;
+            
+}
+#about-us
+{
+    position:absolute;
+    top:100px;
+    left:40px;
+}
+body
+{
+    background-color:rgb(167, 238, 238);
+}
+#img
+{
+    background-image: url("contact.jpg");
+    height:400px;
+    width:700px;
+    position:absolute;
+    left:800px;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+</style>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light " style=" width:1500px;left:30px;border-radius:5px; position:absolute;top:100px;background-color:rgb(138, 216, 240)">
+    <a class="navbar-brand" href="canteen(Home)_Logout.php">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#"> <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="AdminLogin.php">AdminLogin</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="BreakFast.php">Breakfast</a>
+            <a class="dropdown-item" href="Lunch.php">Lunch</a>
+            <a class="dropdown-item" href="Beverages.php">Beverages</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="ContactUs.html" tabindex="-1" >Contact Us</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" onkeyup="ShowSuggestion(this.value)">
+        <button id="search" class="btn btn-outline-blue my-2 my-sm-0" style="border:2px solid rgb(57, 156, 223) ;color:black;background-color:rgb(68,202,243);"type="submit" >Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <div class="Home">
+            <p style="color:white;font-size:46px;padding-top:-55px;padding-left:570px;">Canteen Management</p>
+  </div>
+  </body>
+
+  <section class="about-us py-5 " id="about-us">
+    <!-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+    <!------ Include the above in your HEAD tag ---------->
+    <div class="container mt-5">
+	<div class="row">
+		<div class="col-md-6">
+		    <h1 class='text-success'>Welcome!</h1>
+		    <h2>Know More About Us</h2>
+		    <hr>
+            <br>
+            <p>The main objective of Canteen Management System is to automate the existing manual system with the help of advance computerized software so, that valuable data can be stored for longer period with easy accessing and manipulation of the same.</p><br>
+            <p> The registered user can access the account with valid credentials. User can surf the food items according to categories, Cart and online payment options are available to user. User can track their orders with the food details.
+                In Canteen Management System Admin can handle the functionalities like add new food items, edit/delete food items, Enable/Disable the food items according to season and availability. Admin have authority to view order details and update the delivery status of food. The payment transaction and user details are also viewable to admin.</p>
+            <br>
+                <h5>Contact-Number: 9862563563</h5>
+            <h5>E-Mail: canteen@gmail.com</h5>
+            
+		</div>
+		<div id="img" class="col-md-6">
+		</div>
+	</div>
+</div>
+</section>
+
+
+
+

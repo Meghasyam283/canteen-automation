@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Admin Login</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+     }
+        .container{
+           
+            height:120vh;
+            width:auto;
+            background-color: chartreuse;
+            border:2px solid black;
+            background-image:url(canteen.jpg);
+            background-repeat: no-repeat;
+            background-size:cover;
+        }
+        .box{
+            
+            height:300px;width:950px;
+            margin-left:200px;
+            background-color:white;
+            border:2px solid black;border-radius:10px;
+            
+            }
+        img{
+            float:left;
+            height:300px;
+            width:400px;
+        }
+        p{
+           display:flex;
+           margin-top:100px;
+          padding-left:50px;
+           font-size:40px;
+           justify-content:center;
+           align-items:center;
+        }
+         
+           
+      .small{
+        height:50px;width:950px;
+        background-color: cornsilk;border:2px solid black; margin-left:200px;
+      }
+      a{
+          display:block;
+      color:black;
+      margin:10px;
+   padding-left:120px;
+     font-size:22px;
+     width:70px;
+      text-decoration: none;
+      text-align: center;
+      float:left;
+     }
+      a:hover{
+          background-color:skyblue;
+          color:white;
+          margin-left:0px;
+          
+      }
+      .container1{
+            display:flex;
+           justify-content: center;
+            height:400px;
+            width:950px;
+            border:2px solid black;
+            border-radius:10px;
+            margin-left:200px;
+           background-color: cornsilk;
+           background-image:url(Background\ foodimage3.jpg);
+           background-repeat: no-repeat;
+           background-size:cover;
+        }
+        input{
+                height:35px;
+                width:300px;
+                border:2px solid black;
+                text-align:center;border-radius:10px;
+             }
+             button{
+                height:35px;
+                width:100px;
+                border:2px solid black;
+                font-size:20px;
+                text-align:center;border-radius:10px;
+             }
+             #sign{
+                 margin-left:100px;
+             }
+             #login{
+                 padding-left:20px;
+                 margin:2px;
+             }
+         </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="canteen2.jpeg">
+            <p> CANTEEN AUTOMATION SYSTEM</p>
+        </div>
+        <br>
+        <div class="small">
+            <a href="#">HOME</a>
+            <a href="#">AboutUs</a><a href="#">ContactUs</a>
+            <a href="#">LogOut</a>
+        </div>
+        <br>
+        <div class="container1">
+            <form method="POST" action="adminlogin.html">
+                <br>
+                <br><br>
+                <br><br><br><br>
+                <input type="text" placeholder="Username" required>
+                <br><br>
+                <input type="password" placeholder="Password" required>
+                <br><br><br>
+                <button type="submit">
+                    <a href="adlogindetails.html" id="login">Login</a>
+                </button>
+                <button type="submit"id="sign">Sign Up></button>
+
+            </form>
+        </div>
+</body>
+</html>

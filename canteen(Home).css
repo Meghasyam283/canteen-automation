@@ -1,0 +1,216 @@
+
+*
+{
+    margin:0 px;
+    border:0 px;
+    /* background: linear-gradient(0.25turn, #9cc7db, #888d45, #619948); */
+  
+}
+
+body
+{
+  /* background-color:#a7ffeb; */
+}
+a
+{
+    text-decoration:none;
+    color:black;
+}
+.home
+{
+            top:10px;
+            left:20px;
+            background-color:rgb(31, 30, 30);
+            height:80px;
+            width:1480px;
+            border-radius: 20px;
+            font-size: 16;
+            position:absolute;
+            opacity: 0.9;
+            
+}
+
+.Box:hover 
+{
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.05); 
+}
+#box1
+{
+  background-image: url("Idli.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  position: absolute;
+  top:250px;
+  border-radius:20px;
+  left:150px;
+  background-color:white;
+  height:300px;
+  width:300px;
+}
+#box2
+{
+  background-image: url("Chicken.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position:absolute;
+  top:250px;
+  left:470px;
+  border-radius:20px;
+  background-color:white;
+  height:470px;
+  width:600px;
+}
+#box3
+{
+  position:absolute;
+  background-image: url("Pizza.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  top:250px;
+  left:1090px;
+  border-radius:20px;
+  background-color:white;
+  height:300px;
+  width:300px;
+}
+#box4
+{
+  position: absolute;
+  background-image: url("Burger.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  top:570px;
+  left:150px;
+  border-radius:20px;
+  background-color:white;
+  height:300px;
+  width:300px;
+}
+#box5
+{
+  position:absolute;
+  background-image: url("Tandoori.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  top:740px;
+  left:470px;
+  border-radius:20px;
+  background-color:white;
+  height:450px;
+  width:600px;
+}
+#box6
+{
+  position:absolute;
+  background-image: url("Pasta.JPG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  top:570px;
+  left:1090px;
+  border-radius:20px;
+  background-color:white;
+  height:300px;
+  width:300px;
+}
+#box7
+{
+  position:absolute;
+  top:890px;
+  left:150px;
+  background-image: url("ItalianAkyrt.JPG");
+  border-radius:20px;
+  background-color:white;
+  background-size: cover;
+  height:300px;
+  width:300px;
+}
+#box8
+{
+  position:absolute;
+  top:890px;
+  left:1090px;
+  background-image: url("Pastry.JPG");
+  border-radius:20px;
+  background-color:white;
+  background-size: cover;
+  height:300px;
+  width:300px;
+}
+#box9
+{
+  position:absolute;
+  top:1210px;
+  left:150px;
+  border-radius:20px;
+  background-color:white;
+  background-image: url("cool.JPG");
+  background-size: cover;
+  height:300px;
+  width:300px;
+}
+#box10
+{
+  position:absolute;
+  top:1210px;
+  left:470px;
+  border-radius:20px;
+  background-color:white;
+  background-image: url("PanneerButterMasala.JPG");
+  background-size: cover;
+  height:470px;
+  width:600px;
+}
+#box11
+{
+  position:absolute;
+  top:1210px;
+  left:1090px;
+  background-image: url("milkshake.JPG");
+  border-radius:20px;
+  background-color:white;
+  background-size: cover;
+  height:300px;
+  width:300px;
+}
+.login
+{
+  position: absolute;
+  top:40px;
+  left:1320px;
+  background:transparent;
+
+}
+.signup
+{
+  position: absolute;
+  top:40px;
+  left:1400px;
+  background:transparent;
+}
+.logout
+{
+  position: absolute;
+  top:40px;
+  left:1400px;
+  background:transparent;
+}
+.login input[type="button"]
+{
+  background:transparent;
+  color:white;
+}
+.signup input[type="button"]
+{
+  background:transparent;
+  color:white;
+}
+#Session1
+{
+  color:black;
+  font-size:46;
+  padding-top:-75px;
+  padding-left:990px;
+  margin-left:870px;
+}

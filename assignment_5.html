@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item Lister</title>
+    <style>
+        *{
+            margin:0px;padding:0px;
+        }
+        .container1{
+            position:absolute;
+            height:40px;width:900px;background-color: green;
+            left:70px;padding-left:20px;padding-top:0px;top:30px;
+        }
+        p{
+            top:0px;position:relative;
+        }
+        .c1{
+            position:absolute;
+            border:5px solid rgb(106, 202, 240);
+            height:400px;width:550px;
+            left:100px;top:100px;
+        }
+        h2{
+            position:relative;margin-left:20px;margin-top:30px;
+        }
+        form{
+            position:relative;margin-left:20px;
+        }#items{
+            position:relative;margin-left:20px;height:50px;width:500px;
+            list-style-type: none;
+        }
+             li{
+                 border:2px solid red;margin-bottom:5px;padding:5px;
+             }
+             button{
+                 background-color: red;margin-left:450px;height:20px;width:30px;margin-top:0px;
+                
+             }
+             
+
+    </style>
+</head>
+<body>
+<div class="container">
+<div class="container1">
+    <p>ITEM LISTER</p>
+</div>
+<div class="c1">
+        <h2>Add items</h2><br>
+        <form name="form" id="form" class="form">
+            <input type="text" class="text" id="text">
+            <input type="submit" class="sub" value="submit">
+            <input type="button"class="rev" onclick="ReverseItem()"value="Reverse">
+      
+        </form>
+        <h2>Items</h2><br>
+        <ul id="items"class="list-group">
+            <li class="list-group-item">Your name <button class=" delete">X</button></li>
+              <li class="list-group-item">friends name <button class=" delete">X</button></li>
+              <li class="list-group-item">bestfriends name<button class="delete">X</button></li>
+        </ul>
+</div>
+</div>
+<script>
+    var form = document.getElementById('form');
+     var itemList = document.getElementById('items');
+     // Form submit event
+    form.addEventListener('submit', addItem);
+    // Delete event
+    itemList.addEventListener('click', removeItem);
+    
+    // Add item
+function addItem(e){
+  e.preventDefault();
+
+  // Get input value
+  var newItem = document.getElementById('text').value;
+  if(newItem=="")
+  {
+      alert("Enter the Text");
+  }
+ 
+  else{
+     
+   if(isNaN(newItem)){
+  // Create new li element
+  var li = document.createElement('li');
+  // Add class
+  li.className = 'list-group-item';
+  // Add text node with input value
+  li.appendChild(document.createTextNode(newItem));
+
+  // Create del button element
+  var deleteBtn = document.createElement('button');
+  
+
+
+  // Add classes to del button
+  deleteBtn.className = 'delete';
+
+
+  // Append text node
+  deleteBtn.appendChild(document.createTextNode('X'));
+
+  // Append button to li
+  li.appendChild(deleteBtn);
+
+  // Append li to list
+  itemList.appendChild(li);
+   }else{
+       alert("Numbers are not allowed");
+   }
+      }
+}
+
+
+// Remove item
+function removeItem(e){
+  if(e.target.classList.contains('delete')){
+    if(confirm('Are You Sure?')){
+      var li = e.target.parentElement;
+      itemList.removeChild(li);
+    }
+  }
+}
+function ReverseItem()
+{
+    var i= itemList.childNodes.length;
+    while(i--)
+    {
+        itemList.appendChild(itemList.childNodes[i]);
+    }
+}
+
+</script>
+    
+</body>
+</html>
